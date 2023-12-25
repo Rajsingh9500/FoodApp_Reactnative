@@ -20,23 +20,28 @@ export default function Feature({navigation , route}) {
   <View style = {styles.items}>
     <View style = {styles.item1}>
       <Image style = {styles.img} source={require('../img/bg1.png')}></Image>
-      <Text style = {styles.txt}>Dried apricots {'\n'}$9.38</Text>
-      <Text style = {styles.txt}>1X</Text>
+      <Text style = {styles.txt}>Dried apricots {'\n'}
+      <Text style = {{fontSize:14 , color:'#808080'}}>$9.38</Text>
+      </Text>
+      <Text style = {styles.txt}>x1</Text>
     </View>
     <View style = {styles.item1}>
       <Image style = {styles.img} source={require('../img/bg2.png')}></Image>
-      <Text style = {styles.txt}>Dried apricots {'\n'}$9.38</Text>
-      <Text style = {styles.txt}>1X</Text>
+      <Text style = {styles.txt}>Dried apricots {'\n'}
+      <Text style = {{fontSize:14 , color:'#808080'}}>$9.38</Text></Text>
+      <Text style = {styles.txt}>x1</Text>
     </View>
     <View style = {styles.item1}>
       <Image style = {styles.img} source={require('../img/bg3.png')}></Image>
-      <Text style = {styles.txt}>Dried apricots {'\n'}$9.38</Text>
-      <Text style = {styles.txt}>2X</Text>
+      <Text style = {styles.txt}>Dried apricots {'\n'}
+      <Text style = {{fontSize:14 , color:'#808080'}}>$9.38</Text></Text>
+      <Text style = {styles.txt}>x2</Text>
     </View>
     <View style = {styles.item1}>
       <Image style = {styles.img} source={require('../img/bg4.png')}></Image>
-      <Text style = {styles.txt}>Dried apricots {'\n'}$9.38</Text>
-      <Text style = {styles.txt}>3X</Text>
+      <Text style = {styles.txt}>Dried apricots {'\n'}
+      <Text style = {{fontSize:14 , color:'#808080'}}>$9.38</Text></Text>
+      <Text style = {styles.txt}>x3</Text>
     </View>
 
   </View>
@@ -78,12 +83,13 @@ const styles = StyleSheet.create({
     
   },
   img:{
-    height:70,
-    width:40,
+    height:80,
+    width:50,
   },
   txt:{
     color:'whitesmoke',
     fontSize:18,
+  
   }
   ,
   total:{
