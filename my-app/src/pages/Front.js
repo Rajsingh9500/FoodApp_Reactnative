@@ -64,10 +64,10 @@ export default function Front({navigation , route}) {
     </View>
     <View style = {styles.search}>
     <View style = {styles.cc}>
-      
+      <Image style = {styles.dry} source={require('../img/almonds.png')}/>
       </View> 
-      <View style = {styles.cc}>
-      
+      <View style = {styles.cc11}>
+      <Image style = {styles.dry} source={require('../img/nuts.png')}/>
       </View>
       <View style = {styles.sicon}>
       <FontAwesome name="search" size={24} color="black" />
@@ -161,8 +161,15 @@ const styles = StyleSheet.create({
     backgroundColor:'#fff',
     justifyContent:'center',
     alignItems:'center',
-  },
+  }
+  ,
+  dry:{
+    height:70,
+    width:70,
+    resizeMode:'contain',
   
+  }
+  ,
   
   search:{
     flex:.1,
@@ -174,8 +181,22 @@ const styles = StyleSheet.create({
     height:70,
     width:70,
     borderRadius:35,
-    backgroundColor:'#ff9859',
-    marginHorizontal:30
+    backgroundColor:'#f9c986',
+    marginHorizontal:30,
+    justifyContent:'center',
+    alignItems:'center'
+    
+  },
+  
+  cc11:{
+    height:70,
+    width:70,
+    borderRadius:35,
+    backgroundColor:'#808080a3',
+    marginHorizontal:30,
+    justifyContent:'center',
+    alignItems:'center'
+    
   },
   sicon:{
     
