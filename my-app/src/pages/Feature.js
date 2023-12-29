@@ -1,7 +1,8 @@
-import { View, Text, StyleSheet, Image } from 'react-native'
+import { View, Text, StyleSheet, Image, StatusBar } from 'react-native'
 import React from 'react'
 import { FontAwesome } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
+
 
 
 
@@ -60,7 +61,7 @@ export default function Feature({navigation , route}) {
     </View>
   </View>
   </View>
-  
+  <StatusBar backgroundColor={'#000000a3'}/>
   </>
       
    
@@ -70,7 +71,7 @@ const styles = StyleSheet.create({
   container:{
     backgroundColor:'#2e2e2e',
     flex:1,
-    paddingHorizontal:10, 
+    paddingHorizontal:20, 
   },
   items:{
     flex:.8

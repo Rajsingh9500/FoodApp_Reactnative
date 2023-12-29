@@ -119,7 +119,7 @@ export default function Front({navigation , route}) {
       </ScrollView>
       
     </View>
-    <StatusBar backgroundColor={'#000000a3'}/>
+    <StatusBar backgroundColor={'#808080a3'}/>
     </>
   )
 }

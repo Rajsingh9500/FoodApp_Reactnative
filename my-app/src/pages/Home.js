@@ -1,9 +1,8 @@
-import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native'
+import { View, Text, StyleSheet, Image, TouchableOpacity, StatusBar } from 'react-native'
 import React from 'react'
 import { AntDesign } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
-
 
 export default function Home({navigation , route}) {
   const obj = route.params
@@ -76,7 +75,7 @@ export default function Home({navigation , route}) {
           <Text style = {styles.carttext} >Add to cart</Text>
           </View>
         <View><FontAwesome name="heart" size={30} color="red" /></View>
-      </View>
+       </View>
       </View>
       
     </View>
@@ -96,13 +95,15 @@ export default function Home({navigation , route}) {
       </View>
 
     </View>
+    <StatusBar backgroundColor={'#ff9859'}/>
     </>
+    
   )
 }
 const styles = StyleSheet.create({
   container:{
     flex:.1,
-    backgroundColor:'#ff9859',
+    backgroundColor:'#ff9859', 
 
   },
   icon:{
