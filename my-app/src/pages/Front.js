@@ -94,7 +94,7 @@ export default function Front({navigation , route}) {
       </View>
     </View>
     <View style = {styles.shop}>
-      <ScrollView  horizontal = {true}>
+      <ScrollView showsHorizontalScrollIndicator = {false} horizontal = {true}>
       <TouchableOpacity onPress={()=> setImg(0)} style = {[styles.cc1 , img == 0 ? styles.active:'']}>
         <Image style = {[styles.ccimg , img == 0 ? styles.active1:'']} source={arr[0].image} />
       </TouchableOpacity>
@@ -125,7 +125,7 @@ export default function Front({navigation , route}) {
 }
 const styles = StyleSheet.create({
   container:{
-    flex:.2,
+    flex:.1,
    
     flexDirection:'row',
     justifyContent:'space-between'
@@ -172,8 +172,9 @@ const styles = StyleSheet.create({
   ,
   
   search:{
-    flex:.1,
+    flex:.2,
     flexDirection:'row',
+    paddingHorizontal:20,
 
 
   },
@@ -182,7 +183,7 @@ const styles = StyleSheet.create({
     width:70,
     borderRadius:35,
     backgroundColor:'#f9c986',
-    marginHorizontal:30,
+    
     justifyContent:'center',
     alignItems:'center'
     
@@ -200,7 +201,7 @@ const styles = StyleSheet.create({
   },
   sicon:{
     
-    marginHorizontal:100,
+  paddingHorizontal:30,
   
     
 
@@ -216,8 +217,8 @@ const styles = StyleSheet.create({
 
   },
   c:{
-    height:300,
-    width:300,
+    height:250,
+    width:250,
     borderRadius:150,
     backgroundColor:'#ff9859',
     flexDirection:'row',

@@ -49,7 +49,7 @@ export default function Home({navigation , route}) {
       marginBottom:5}}>
         Capicity
       </Text>
-     <View style = {{flexDirection:'row' , justifyContent:'space-evenly'}}>
+     <View style = {{flexDirection:'row' ,}}>
      <View style = {styles.box}><Text  style = {styles.boxtxt}>calories</Text>
      <Text style = {{fontSize:20, paddingHorizontal:5, color:'whitesmoke'}}>98</Text></View>
       <View style = {styles.box}>
@@ -115,13 +115,14 @@ const styles = StyleSheet.create({
   img:{
     flex:.3,
     backgroundColor:'#ff9859',
-    flexDirection:'row'
+    flexDirection:'row',
+    justifyContent:'space-evenly'
 
 
   },
   img1:{
-    height:250,
-    width:200,
+    height:180,
+    width:150,
     resizeMode:'contain',
   
   },
@@ -148,11 +149,12 @@ const styles = StyleSheet.create({
 
   },
   box:{
-    height:75,
-    width:75,
+    height:60,
+    width:60,
     borderWidth:2,
     borderColor:'white',
     marginVertical:10,
+    marginHorizontal:20
   
   },
   boxtxt:{
